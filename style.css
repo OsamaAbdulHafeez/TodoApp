@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #dfe689;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main .header{
+    font-family: sans-serif;
+}
+.main .textArea{
+    position: relative;
+}
+.main .textArea input{
+    width: 50vw;
+    height: 50px;
+    font-size: 20px;
+    color: black;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 5px solid #cf9b0a;
+}
+.main .textArea button{
+    width: fit-content;
+    height: 50px;
+    align-self: center;
+    padding: 0px 20px;
+    position: absolute;
+    margin-left: 15px;
+    background-color: #cf9b0a;
+    font-size: 20px;
+    color: antiquewhite;
+    border: none;
+    border-radius: 10px;
+}
+.main .list{
+    width: 50vw;
+}
+.main ul li{
+    position: relative;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.main li::before{
+    content: '';
+    background-image: url(./Assets/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 10px;
+    left: 10px;
+}
+.main ul li.checked{
+    text-decoration-line: line-through;
+}
+.main ul li.checked::before{
+    background-image: url(./Assets/checked.png);
+}
+.main li p{
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-left: 50px;
+    color: #575656;
+}
+.main li button:nth-child(1){
+    background-color: #f76363;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #fff;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+.main li button:nth-child(2){
+    background-color: #405c26;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+
+li{
+    list-style: none;
+}
